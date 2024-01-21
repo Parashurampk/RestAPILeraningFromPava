@@ -1,4 +1,4 @@
-package Day3;
+package ld2_restAssuredDataValidation;
 
 import static io.restassured.RestAssured.*;
 import static io.restassured.matcher.RestAssuredMatchers.*;

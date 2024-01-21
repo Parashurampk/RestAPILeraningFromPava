@@ -1,4 +1,4 @@
-package OldCode;
+package ld1_restAssureMethods;
 
 import static io.restassured.RestAssured.*;
 import static io.restassured.matcher.RestAssuredMatchers.*;

@@ -1,4 +1,4 @@
-package OldCode;
+package ld1_restAssureMethods;
 
 import java.util.HashMap;
 
@@ -38,9 +38,7 @@ public class POSTMethodTest {
 			.statusCode(200)
 			.log().all()
 			.body("status", equalTo("success"))
-			.body("message", equalTo("Successfully! Record has been added."));
-		
-			
+			.body("message", equalTo("Successfully! Record has been added."));			
 	}
 	//Using Hashmap
 	@Test(priority = 1)
@@ -58,8 +56,7 @@ public class POSTMethodTest {
 		.then()
 			.statusCode(201)
 			.log().all()
-			.body("Job", equalTo("Leader"));
-				
+			.body("Job", equalTo("Leader"));			
 	}
 	
 	//Using JSON Library
@@ -81,25 +78,5 @@ public class POSTMethodTest {
 			.log().all()
 			.body("Job", equalTo("Role"));
 	 }
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
 }
 

@@ -1,4 +1,4 @@
-package Day5_API_Chaining;
+package ld3_restAssuredAPI_Chaining;
 
 import static io.restassured.RestAssured.given;
 import static io.restassured.RestAssured.*;

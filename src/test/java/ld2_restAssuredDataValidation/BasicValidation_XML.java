@@ -1,4 +1,4 @@
-package Day3;
+package ld2_restAssuredDataValidation;
 /*
  1.Verifying Single Content in in XML response 
  	.body("CUSTOMER.ID",equalTo("15"))
@@ -25,7 +25,7 @@ import static org.hamcrest.Matchers.*;
 
 import org.testng.annotations.Test;
 
-public class parsingXMLresponse {
+public class BasicValidation_XML {
 	
 	@Test //Verifying Single Content in in XML response 
 	public void testSingleContent() {

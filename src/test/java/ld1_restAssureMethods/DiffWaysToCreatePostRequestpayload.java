@@ -1,20 +1,17 @@
-package api.test;
+package ld1_restAssureMethods;
 
-import static io.restassured.RestAssured.*;
-import static io.restassured.matcher.RestAssuredMatchers.*;
-import static org.hamcrest.Matchers.*;
-
+import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.equalTo;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.HashMap;
-
 import org.json.JSONObject;
 import org.json.JSONTokener;
 import org.testng.annotations.Test;
 
-import Day2.pojoPostRequest;
-import groovy.util.logging.Log;
+import api.test.pojoPostRequest;
+
 
 public class DiffWaysToCreatePostRequestpayload {
 	

@@ -1,4 +1,4 @@
-package Day4;
+package ld2_restAssuredDataValidation;
 
 import static io.restassured.RestAssured.given;
 import static io.restassured.RestAssured.*;

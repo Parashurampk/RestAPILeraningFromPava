@@ -1,0 +1,74 @@
+dependencies: downloading required jars for the projects
+--------------
+rest-assured
+org.json
+testng
+scribejava-apis : for OAuth 1 and OAuth 2 authentications
+json-schema-validator
+---------------
+javafaker
+extentreports
+poi
+poi-ooxml
+log4j-api
+log4j-core
+
+To run project in command propmt: Plugins-->Compling and executing the projects 
+---------------------------------
+maven-surefire-plugin
+maven-compiler-plugin
+
+
+given() - We need to specify the all the prerequisites                       -- >Set cookies, add auth, add param,  set headers, etc…
+when() - What kind of request we are going to send requests along with params --> get, post , put, delete
+then() -  here we need to do the validations 
+---------------------------------------------------------------
+
+HTTP Methods :
+-------------
+Get   : Get the rcords from the server
+Post  : create new record in the server
+Put   : to update all the details like empid , empname, sal, design
+patch : if we want to update only partial details just sal. 
+Delete: delete the recods from the server
+
+
+Authorizations: Basic, Digest,preempive,Bearer token,oauth 1.0,2.0,API Key
+
+API Tase Template :- TCID, Request Type, URI,Request payload,Response payload ,status code 
+				
+https://www.google.com/serach?q=newyork&rlz=sjdhdss_enlkjbjbs
+                    Base url           /Resource /?Queryparameters
+
+
+Path parameters: Typically used to point to a specific resource within collections ex: used id 
+                  https://www.google.com/images/22765735 
+Query parameters :used to sort/filter the resource		
+                  httpss://reqres.in/api/users?pages=2	
+
+.assertThat().body(JsonSchemaValidator.matchesJsonSchemaInClasspath("storejsonSchema.json"));
+ 		 //JsonSchemaValidator-free defined class
+                 //matchesJsonSchemaInClasspath - is method where we will specify json file 
+
+======================================Preparation==========================================
+Can you write a sample of API(URL) and JSON?
+
+https://api.example.com/users/123
+{
+  "userId": 123,
+  "username": "john_doe",
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "john.doe@example.com",
+  "age": 30,
+  "isActive": true,
+  "createdAt": "2023-01-01T12:00:00Z"
+}
+
+How do you handle the Authentication tokens?
+Authentication tokens are often used to verify the identity of a client making requests to the API. 
+
+RestAssured.baseURI = "https://api.example.com";
+In RestAssured, the base URI is the common base URL that is used for making requests to different endpoints of a RESTful API. It serves as the starting point for constructing the full URLs of API endpoints.
+
+Can you explain RequestSpecification request = RestAssured.given();

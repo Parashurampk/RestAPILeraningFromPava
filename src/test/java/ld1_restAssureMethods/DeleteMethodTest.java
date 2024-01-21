@@ -1,4 +1,4 @@
-package OldCode;
+package ld1_restAssureMethods;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;

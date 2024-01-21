@@ -1,4 +1,4 @@
-package OldCode;
+package ld2_restAssuredDataValidation;
 
 import org.testng.annotations.Test;
 import groovy.util.logging.Log;

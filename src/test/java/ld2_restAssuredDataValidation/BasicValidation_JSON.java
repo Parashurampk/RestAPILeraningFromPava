@@ -1,4 +1,4 @@
-package OldCode;
+package ld2_restAssuredDataValidation;
 
 import static io.restassured.RestAssured.*;
 import static io.restassured.matcher.RestAssuredMatchers.*;
@@ -13,10 +13,6 @@ import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 
 /*
- * Test Status code  //.statusCode(200)
- 
- * Log Response		//.log().all();
-  
  * Verifying Single Content in response body //.body("response.id[0]",equalTo(1)) 
 
  * Verifying Multiple Content in response body //.body("response.id",hasItems(1,2,3,4,5,6,7,8,9,10));
@@ -77,33 +73,6 @@ public class BasicValidation_JSON {
 		public void testcase2() {
 			Response response= given().param("q","potter")
 					.when().get("https://www.googleapis.com/books/v1/volumes")
-					.then().statusCode(200).extract().response();
-				
+					.then().statusCode(200).extract().response();			
 		}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

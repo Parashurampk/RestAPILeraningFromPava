@@ -1,4 +1,4 @@
-package OldCode;
+package ld2_restAssuredDataValidation;
 
 import org.testng.annotations.Test;
 
@@ -64,24 +64,3 @@ public class TestBasicFeatures {
 	}
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

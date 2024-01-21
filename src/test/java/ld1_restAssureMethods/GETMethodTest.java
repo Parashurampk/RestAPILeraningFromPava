@@ -1,4 +1,4 @@
-package OldCode;
+package ld1_restAssureMethods;
 
 import org.testng.annotations.Test;
 import static io.restassured.RestAssured.*;

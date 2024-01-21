@@ -1,4 +1,4 @@
-package Day2;
+package ld2_restAssuredDataValidation;
 
 public class pojoPostRequest {
 	
